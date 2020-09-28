@@ -1,0 +1,158 @@
+.patners-main-container {
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.patners-container {
+  width: 70%;
+  display: grid;
+  height: auto;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 10px;
+  justify-content: center;
+  margin-bottom: 150px;
+}
+.patner-line {
+  width: 150px;
+  height: 3px;
+  margin-top: 20px;
+  background-color: #000;
+}
+.patners-text-container {
+  margin-top: 150px;
+  margin-bottom: 100px;
+}
+.patner-big-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.patner-logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  flex-direction: column;
+  width: 90%;
+  height: 110px;
+  /* cursor: pointer; */
+  transition: all 0.3s ease-in;
+}
+
+.logo-details {
+  z-index: 1;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20px;
+  transition: all 0.3s ease-in;
+  background-color: #333333;
+  display: none;
+}
+.logo-details h4 {
+  transition: all 0.3s ease-in;
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-top: 8px;
+  color: rgb(224, 219, 219);
+}
+/* .patner-logo-container:hover {
+  background-color: rgba(255, 255, 255, 0.103);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.203);
+} */
+.patner-logo-container:hover > .logo-details {
+  display: flex;
+}
+.patners-main-container img {
+  width: 80%;
+  height: auto;
+}
+.patner-big-title h1 {
+  text-transform: uppercase;
+  color: rgba(3, 3, 3, 0.76);
+}
+
+@media (max-width: 768px) {
+  .patners-container {
+    width: 70%;
+    display: grid;
+    height: auto;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    justify-content: center;
+    margin-bottom: 150px;
+  }
+  .patner-logo-container {
+    width: 90%;
+    height: 100px;
+  }
+  .logo-details {
+    height: 16px;
+  }
+  .logo-details h4 {
+    margin-top: 8px;
+
+    font-size: 12px;
+  }
+  .patner-big-title h1 {
+    font-size: 28px;
+  }
+  .patner-line {
+    width: 80px;
+    height: 3px;
+    margin-top: 20px;
+  }
+  .patners-text-container {
+    margin-top: 100px;
+    margin-bottom: 70px;
+  }
+}
+
+@media (max-width: 480px) {
+  .patners-container {
+    width: 80%;
+    display: grid;
+    height: auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    justify-content: center;
+    margin-bottom: 150px;
+  }
+  .patner-logo-container {
+    width: 90%;
+    height: 90px;
+  }
+  .logo-details {
+    height: 16px;
+  }
+  .logo-details h4 {
+    margin-top: 8px;
+
+    font-size: 10px;
+  }
+  .patner-big-title h1 {
+    font-size: 20px;
+  }
+  .patner-line {
+    width: 80px;
+    height: 3px;
+    margin-top: 20px;
+  }
+  .patners-text-container {
+    margin-top: 80px;
+    margin-bottom: 50px;
+  }
+  .patners-container {
+    margin-bottom: 80px;
+  }
+}

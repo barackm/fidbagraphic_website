@@ -1,0 +1,283 @@
+.new-about-page-wrapper {
+  width: 100%;
+  min-height: 800px;
+  background-color: var(--main-link-color);
+  display: flex;
+  justify-content: center;
+  overflow-y: hidden !important;
+  overflow-x: hidden !important;
+}
+
+.new-about-page-container {
+  width: 80%;
+  color: #000;
+  padding-top: 100px;
+  padding-bottom: 200px;
+  overflow-y: hidden !important;
+  overflow-x: hidden !important;
+}
+.new-about-page-container .about-title2 {
+  font-size: 65px;
+  text-align: center;
+  font-family: var(--font-familly-titles);
+}
+.qui-sommes-nous {
+  margin-top: 100px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.qui-sommes-nous:not(:first-child) {
+  margin-top: 150px;
+}
+.qui-sommes-nous-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.qui-sommes-nous-content-wrapper h1 {
+  font-size: 45px;
+  margin-bottom: 40px;
+  font-family: var(--font-familly-titles);
+}
+
+.qui-sommes-nous-icon-wrappe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.qui-sommes-nous-icon {
+  width: 70%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid var(--main-black-color);
+  border-radius: 10px;
+}
+
+.qui-sommes-nous-icon i {
+  font-size: 100px;
+  transition: all 0.5s;
+}
+.qui-sommes-nous-icon i:hover {
+  transform: rotate(380deg);
+}
+.qui-sommes-nous-content-wrapper p {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+/* .qui-sommes-nous-icon-wrapper.two {
+  grid-column: 2/3;
+  background-color: blue;
+}
+.qui-sommes-nous-content-wrapper.two {
+  grid-column: 1/2;
+  background-color: aqua;
+} */
+.qui-sommes-nous-icon-wrapper.two {
+  justify-content: flex-end;
+}
+
+.qui-sommes-nous-icon-wrapper.two .qui-sommes-nous-icon {
+  margin-left: 30%;
+}
+
+@media (max-width: 1024px) {
+  .qui-sommes-nous-content-wrapper h1 {
+    font-size: 35px;
+    margin-bottom: 30px;
+  }
+  .new-about-page-container .about-title2 {
+    font-size: 55px;
+    text-align: center;
+  }
+}
+@media (max-width: 800px) {
+  .new-about-page-container {
+    width: 90%;
+    color: #000;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .qui-sommes-nous-content-wrapper h1 {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  .new-about-page-container .about-title2 {
+    font-size: 45px;
+    text-align: center;
+  }
+  .qui-sommes-nous {
+    margin-top: 0px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 50px;
+  }
+  .qui-sommes-nous-icon {
+    width: 35%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--main-black-color);
+    border-radius: 10px;
+  }
+  .qui-sommes-nous-icon-wrapper.two {
+    grid-row: 1/2 !important;
+  }
+  .qui-sommes-nous-icon-wrapper.two .qui-sommes-nous-icon {
+    margin-left: 0%;
+  }
+  .qui-sommes-nous:not(:first-child) {
+    margin-top: 50px;
+  }
+  .qui-sommes-nous:first-child {
+    margin-top: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  .new-about-page-container {
+    width: 90%;
+    color: #000;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .qui-sommes-nous-content-wrapper h1 {
+    font-size: 25px;
+    margin-bottom: 30px;
+  }
+  .new-about-page-container .about-title2 {
+    font-size: 35px;
+    text-align: center;
+  }
+  .qui-sommes-nous {
+    margin-top: 0px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 50px;
+  }
+  .qui-sommes-nous-icon {
+    width: 50%;
+    height: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--main-black-color);
+    border-radius: 10px;
+  }
+  .qui-sommes-nous-icon i {
+    font-size: 80px;
+  }
+  .qui-sommes-nous-icon-wrapper.two {
+    grid-row: 1/2 !important;
+  }
+  .qui-sommes-nous-icon-wrapper.two .qui-sommes-nous-icon {
+    margin-left: 0%;
+  }
+  .qui-sommes-nous:not(:first-child) {
+    margin-top: 50px;
+  }
+  .qui-sommes-nous:first-child {
+    margin-top: 100px;
+  }
+  .qui-sommes-nous-content-wrapper p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 320px) {
+  .new-about-page-container {
+    width: 90%;
+    color: #000;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .qui-sommes-nous-content-wrapper h1 {
+    font-size: 25px;
+    margin-bottom: 30px;
+  }
+  .new-about-page-container .about-title2 {
+    font-size: 35px;
+    text-align: center;
+  }
+  .qui-sommes-nous {
+    margin-top: 0px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 50px;
+  }
+  .qui-sommes-nous-icon {
+    width: 90%;
+    height: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--main-black-color);
+    border-radius: 10px;
+  }
+  .qui-sommes-nous-icon i {
+    font-size: 60px;
+  }
+  .qui-sommes-nous-icon-wrapper.two {
+    grid-row: 1/2 !important;
+  }
+  .qui-sommes-nous-icon-wrapper.two .qui-sommes-nous-icon {
+    margin-left: 0%;
+  }
+  .qui-sommes-nous:not(:first-child) {
+    margin-top: 50px;
+  }
+  .qui-sommes-nous:first-child {
+    margin-top: 100px;
+  }
+  .qui-sommes-nous-content-wrapper p {
+    font-size: 16px;
+    width: 90%;
+  }
+}
+
+.new-about-page-wrapper.dark {
+  background-color: #222222;
+  color: var(--main-link-color);
+}
+.new-about-page-wrapper.dark .new-about-page-container .about-title2 {
+  color: var(--main-link-color);
+}
+.new-about-page-wrapper.dark
+  .new-about-page-container
+  .qui-sommes-nous
+  .qui-sommes-nous-icon-wrapper
+  .qui-sommes-nous-icon
+  i {
+  color: var(--main-link-color);
+}
+.new-about-page-wrapper.dark
+  .new-about-page-container
+  .qui-sommes-nous
+  .qui-sommes-nous-icon-wrapper
+  .qui-sommes-nous-icon {
+  border-color: var(--main-link-color);
+}
+
+.new-about-page-wrapper.dark
+  .new-about-page-container
+  .qui-sommes-nous
+  .qui-sommes-nous-content-wrapper
+  h1 {
+  color: var(--main-link-color);
+}
+.new-about-page-wrapper.dark
+  .new-about-page-container
+  .qui-sommes-nous
+  .qui-sommes-nous-content-wrapper
+  p {
+  color: var(--main-link-color);
+}

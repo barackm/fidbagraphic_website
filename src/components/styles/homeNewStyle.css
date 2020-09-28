@@ -1,0 +1,133 @@
+.home-main-container {
+  position: relative;
+  width: 100%;
+  height: 660px;
+  overflow-y: hidden !important;
+  overflow-x: hidden !important;
+}
+.home-background-container {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  overflow-y: hidden !important;
+  overflow-x: hidden !important;
+}
+.background-desk {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://res.cloudinary.com/fidbagraphicscode/image/upload/v1594975298/fidbagraphics/backgrounds/backgrounds_oliver-pecker-HONJP8DyiSM-unsplash_bdjtue.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+}
+.arrow-down-container {
+  position: absolute;
+  width: 100%;
+  bottom: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.container2 {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  cursor: pointer !important;
+}
+
+.chevron {
+  position: absolute;
+  width: 28px;
+  height: 8px;
+  opacity: 0;
+  cursor: pointer;
+  transform: scale3d(0.5, 0.5, 0.5);
+  animation: move 3s ease-out infinite;
+}
+
+.chevron:first-child {
+  animation: move 3s ease-out 1s infinite;
+}
+
+.chevron:nth-child(2) {
+  animation: move 3s ease-out 2s infinite;
+}
+
+.chevron:before,
+.chevron:after {
+  cursor: pointer;
+  content: " ";
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 51%;
+  background: #fff;
+}
+
+.chevron:before {
+  left: 0;
+  transform: skew(0deg, 30deg);
+}
+
+.chevron:after {
+  right: 0;
+  width: 50%;
+  transform: skew(0deg, -30deg);
+}
+
+@keyframes move {
+  25% {
+    opacity: 1;
+  }
+  33% {
+    opacity: 1;
+    transform: translateY(30px);
+  }
+  67% {
+    opacity: 1;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
+  }
+}
+
+.text {
+  display: block;
+  margin-top: 75px;
+  margin-left: -30px;
+  font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  font-size: 12px;
+  color: #fff;
+  text-transform: uppercase;
+  white-space: nowrap;
+  opacity: 0.25;
+  animation: pulse 2s linear alternate infinite;
+}
+
+@keyframes pulse {
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-main-container {
+    position: relative;
+    width: 100%;
+    height: 560px;
+    overflow-y: hidden !important;
+    overflow-x: hidden !important;
+  }
+  .arrow-down-container.home {
+    bottom: 100px;
+  }
+}

@@ -1,0 +1,43 @@
+.myBtn {
+  width: 50px;
+  position: fixed;
+  height: 50px;
+  bottom: 20px;
+  left: 30px;
+  border-radius: 50%;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+}
+
+.myBtn i {
+  color: #000;
+  font-size: 50px;
+}
+.myBtn:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 768px) {
+  .myBtn {
+    width: 40px !important;
+    height: 40px !important;
+  }
+  .myBtn i {
+    color: #000;
+    font-size: 40px !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .myBtn {
+    width: 30px !important;
+    height: 30px !important;
+  }
+  .myBtn i {
+    color: #000;
+    font-size: 30px !important;
+  }
+}

@@ -1,0 +1,364 @@
+.web-design-main-container {
+  background: url("https://res.cloudinary.com/fidbagraphicscode/image/upload/v1594975299/fidbagraphics/backgrounds/backgrounds_24854-min_ac5wro.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 700px;
+  display: flex;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  overflow-y: hidden !important;
+}
+@keyframes shrink {
+  0% {
+    background-size: 110% 110%;
+  }
+  100% {
+    background-size: 100% 100%;
+  }
+}
+.main-text-web-container-web {
+  width: 50%;
+  height: 100%;
+}
+
+.logo-design-container-web {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.rotating-circle-web {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 4px dashed #fff;
+  animation: animateCircle1 10s linear infinite;
+}
+
+.rotating-circle-web2 {
+  position: absolute;
+  width: 280px;
+  height: 280px;
+  margin-right: 0px;
+  border-radius: 50%;
+  border: 4px dashed #fff;
+  animation: animateCircle2 10s linear infinite;
+}
+
+.logo-design-container-web i {
+  font-size: 90px;
+  position: absolute;
+}
+
+@keyframes animateCircle2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animateCircle1 {
+  0% {
+    transform: rotate(36deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.main-text-web-container-web {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+.title-web {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.title-web h1 {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 40px;
+}
+
+.line-web {
+  width: 50%;
+  height: 3px;
+  margin-top: 20px;
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+
+.content-web {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.text-container {
+  width: 80%;
+}
+.text-container p {
+  text-align: right;
+  font-size: 20px;
+}
+
+.list-main-content-web {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-list-web {
+  display: flex;
+  justify-content: right;
+  float: right;
+  flex-direction: column;
+}
+
+.item1-web {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: right;
+  float: right;
+  align-items: center;
+}
+
+.item1-web h2 {
+  font-size: 25px;
+}
+
+.right-list {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.item2-web {
+  padding: 10px 20px;
+  display: flex;
+  float: right;
+  justify-content: left;
+  float: left;
+  align-items: center;
+}
+
+.item2-web h2 {
+  font-size: 25px;
+}
+
+.item2-icon-container-web {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-right: 20px;
+}
+.item2-icon-container-web:hover {
+  background-color: #fff;
+}
+.item2-icon-container-web i {
+  transition: 0.4s;
+}
+.item2-icon-container-web:hover > i {
+  color: #000;
+  transform: rotate(360deg);
+}
+.item1-icon-container-web {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-left: 20px;
+}
+.item1-icon-container-web:hover {
+  background-color: #fff;
+}
+.item1-icon-container-web i {
+  transition: 0.4s;
+}
+.item1-icon-container-web:hover i {
+  color: #000;
+  transform: rotate(380deg);
+}
+
+@media (max-width: 1024px) {
+  .rotating-circle-web {
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    border: 4px dashed #fff;
+    animation: animateCircle1 10s linear infinite;
+  }
+
+  .rotating-circle-web2 {
+    position: absolute;
+    width: 210px;
+    height: 210px;
+    margin-right: 0px;
+    border-radius: 50%;
+    border: 4px dashed #fff;
+    animation: animateCircle2 10s linear infinite;
+  }
+  .item2-web h2 {
+    font-size: 18px;
+  }
+  .item1-web h2 {
+    font-size: 18px;
+  }
+  .title-web h1 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 30px;
+  }
+}
+@media (max-width: 800px) {
+  .main-text-web-container-web {
+    margin-top: -100px;
+  }
+  .logo-design-container-web {
+    margin-top: -80px;
+  }
+  .rotating-circle-web {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 4px dashed #fff;
+    animation: animateCircle1 10s linear infinite;
+  }
+
+  .rotating-circle-web2 {
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    margin-right: 0px;
+    border-radius: 50%;
+    border: 4px dashed #fff;
+    animation: animateCircle2 10s linear infinite;
+  }
+
+  .logo-design-container-web i {
+    font-size: 90px;
+    position: absolute;
+  }
+  .list-main-content-web {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 20px;
+    right: 0px;
+    width: 100vw;
+  }
+  .item1-web h2 {
+    font-size: 20px;
+  }
+  .item2-web h2 {
+    margin-top: 0px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .web-design-main-container {
+    background: url("https://res.cloudinary.com/fidbagraphicscode/image/upload/v1594975299/fidbagraphics/backgrounds/backgrounds_24853-min_nte35p.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 900px;
+    display: flex;
+    color: #fff;
+    overflow: hidden;
+    flex-direction: column;
+  }
+  .main-text-web-container-web {
+    margin-top: -200px;
+  }
+  .logo-design-container-web {
+    margin-top: -170px;
+    width: 100%;
+  }
+  .rotating-circle-web {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px dashed #fff;
+    animation: animateCircle1 10s linear infinite;
+  }
+
+  .rotating-circle-web2 {
+    position: absolute;
+    width: 170px;
+    height: 170px;
+    margin-right: 0px;
+    border-radius: 50%;
+    border: 4px dashed #fff;
+    animation: animateCircle2 10s linear infinite;
+  }
+
+  .logo-design-container-web i {
+    font-size: 50px;
+    position: absolute;
+  }
+  .list-main-content-web {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 20px;
+    right: -25px;
+    width: 100vw;
+  }
+  .item1-web h2 {
+    font-size: 20px;
+  }
+  .item2-web h2 {
+    margin-top: 0px;
+    font-size: 20px;
+  }
+  .title-web {
+    margin-top: -250px;
+  }
+  .title-web h1 {
+    font-size: 25px;
+  }
+  .line-web {
+    margin-top: 0px;
+  }
+  .main-text-web-container-web {
+    width: 80%;
+  }
+  .content-web {
+  }
+  .text-container p {
+    font-size: 18px;
+    text-align: justify;
+  }
+  .left-list-web {
+    display: none;
+  }
+}

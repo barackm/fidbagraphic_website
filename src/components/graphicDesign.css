@@ -1,0 +1,388 @@
+.graphicDesign-main-container {
+  width: 100%;
+  height: 700px;
+  background-color: #ecf0f1;
+  display: flex;
+  color: #000;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden !important;
+  overflow-y: hidden !important;
+}
+
+.logo-design-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden !important;
+  overflow-y: hidden !important;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.title h1 {
+  text-transform: uppercase;
+  font-size: 25px;
+}
+.title .line {
+  background-color: #000;
+}
+.main-text-design-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-container-graphic {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  width: 80%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.text-container-graphic p {
+  text-align: left;
+  font-size: 18px;
+}
+
+.list-main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-list {
+  display: flex;
+  justify-content: right;
+  float: right;
+  flex-direction: column;
+}
+
+.item1 {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: right;
+  float: right;
+  align-items: center;
+}
+
+.item1 h2 {
+  font-size: 25px;
+}
+
+.right-list {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.item2 {
+  padding: 10px 20px;
+  display: flex;
+  float: right;
+  justify-content: left;
+  float: left;
+  align-items: center;
+}
+.left-list {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.item2 {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: left;
+  float: right;
+  align-items: center;
+}
+
+.item2 h2 {
+  font-size: 25px;
+}
+.item2-icon-container {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-right: 20px;
+}
+.item2-icon-container:hover {
+  background-color: #000;
+}
+.item1-icon-container:hover {
+  background-color: #000;
+}
+
+.item2-icon-container i {
+  transition: 0.4s;
+}
+.item1-icon-container i {
+  transition: 0.4s;
+}
+
+.item2-icon-container:hover > i {
+  color: #fff;
+  transform: rotate(360deg);
+}
+.item1-icon-container:hover > i {
+  color: #fff;
+  transform: rotate(360deg);
+}
+.item1-icon-container {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.logo-design-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.rotating-circle {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 4px dashed #000;
+  animation: animateCircle1 10s linear infinite;
+}
+
+.rotating-circle2 {
+  position: absolute;
+  width: 280px;
+  height: 280px;
+  margin-right: 0px;
+  border-radius: 50%;
+  border: 4px dashed #000;
+  animation: animateCircle2 10s linear infinite;
+}
+
+.logo-design-container i {
+  font-size: 90px;
+  color: #000;
+  position: absolute;
+}
+
+@keyframes animateCircle2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animateCircle1 {
+  0% {
+    transform: rotate(36deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@media (max-width: 1024px) {
+  .rotating-circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 4px dashed #000;
+    animation: animateCircle1 10s linear infinite;
+  }
+
+  .rotating-circle2 {
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    margin-right: 0px;
+    border-radius: 50%;
+    border: 4px dashed #000;
+    animation: animateCircle2 10s linear infinite;
+  }
+  .item2 h2 {
+    font-size: 18px;
+  }
+  .item1 h2 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 800px) {
+  .main-text-design-container {
+    margin-top: -200px;
+    width: 60%;
+    text-align: left;
+  }
+  .logo-design-container {
+    margin-right: 10px;
+    margin-top: -160px;
+  }
+  .rotating-circle {
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    border: 4px dashed #000;
+    animation: animateCircle1 10s linear infinite;
+  }
+
+  .rotating-circle2 {
+    position: absolute;
+    width: 210px;
+    height: 210px;
+    margin-right: 0px;
+    border-radius: 50%;
+    border: 4px dashed #000;
+    animation: animateCircle2 10s linear infinite;
+  }
+
+  .logo-design-container i {
+    font-size: 80px;
+    position: absolute;
+  }
+  .list-main-content {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 70px;
+    right: 0px;
+    width: 100vw;
+  }
+  .item1 h2 {
+    font-size: 18px;
+  }
+  .item2 h2 {
+    margin-top: 0px;
+    font-size: 18px;
+  }
+  .content p {
+    text-align: justify;
+  }
+}
+
+@media (max-width: 480px) {
+  .graphicDesign-main-container {
+    width: 100%;
+    min-height: 900px;
+    display: flex;
+    color: #000;
+    overflow: hidden;
+    flex-direction: column;
+  }
+  .main-text-design-container {
+    margin-top: -20px;
+  }
+  .logo-design-container {
+    position: absolute;
+    margin-right: 0px;
+    top: -160px !important;
+    width: 100%;
+  }
+  .rotating-circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px dashed #000;
+    animation: animateCircle1 10s linear infinite;
+  }
+
+  .rotating-circle2 {
+    position: absolute;
+    width: 170px;
+    height: 170px;
+    margin-right: 0px;
+    border-radius: 50%;
+    border: 4px dashed #000;
+    animation: animateCircle2 10s linear infinite;
+  }
+
+  .logo-design-container i {
+    font-size: 50px;
+    position: absolute;
+  }
+  .list-main-content {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 70px;
+    right: 0px;
+    width: 100vw;
+  }
+  .item1 h2 {
+    font-size: 20px;
+  }
+  .item2 h2 {
+    margin-top: 0px;
+    font-size: 20px;
+  }
+  .list-main-content {
+    bottom: 60px;
+  }
+
+  .line {
+    margin-top: 0px;
+  }
+  .main-text-design-container {
+    width: 80%;
+  }
+
+  .text-container p {
+    font-size: 18px;
+    text-align: justify;
+  }
+  .left-list {
+    display: none;
+  }
+}
+
+@media (max-width: 320px) {
+  .title h1 {
+    text-transform: uppercase;
+    font-size: 20px;
+  }
+}
+@media (max-width: 280px) {
+  .title h1 {
+    font-size: 20px;
+  }
+}
+.global-class-name {
+  font-size: 18px !important;
+  transition: 0.3s;
+}
