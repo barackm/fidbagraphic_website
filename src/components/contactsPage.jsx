@@ -380,8 +380,6 @@ class ContactsPage extends Component {
 }
 
 export default GoogleApiWrapper({
-  apiKey: "AIzaSyDOhrqODvE_uljJS62OjJaadQI6_NQfkrQ",
+  apiKey: "",
 })(ContactsPage);
-// AIzaSyD86JrnzmW9XAJMtre0i4snDmOuPJIuOEs not restricted
-// AIzaSyDOhrqODvE_uljJS62OjJaadQI6_NQfkrQ restricted API key for google maps
-//https://www.youtube.com/watch?v=rWiYi9v8JFU
+
